@@ -1,17 +1,17 @@
-Strings and Factors
--------------------
+# Strings and Factors
+# -------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Strings
-~~~~~~~
+# Strings
+# ~~~~~~~
 
 
-Constructing and Printing Strings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Constructing and Printing Strings
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 c(
@@ -43,8 +43,8 @@ x
 y
 
 
-Formatting Numbers
-^^^^^^^^^^^^^^^^^^
+# Formatting Numbers
+# ^^^^^^^^^^^^^^^^^^
 
 
 pow <- 1:3
@@ -74,8 +74,8 @@ prettyNum(
 )
 
 
-Special Characters
-^^^^^^^^^^^^^^^^^^
+# Special Characters
+# ^^^^^^^^^^^^^^^^^^
 
 
 cat("foo\tbar", fill = TRUE)
@@ -102,16 +102,16 @@ cat("\a")
 alarm()
 
 
-Changing Case
-^^^^^^^^^^^^^
+# Changing Case
+# ^^^^^^^^^^^^^
 
 
 toupper("I'm Shouting")
 tolower("I'm Whispering")
 
 
-Extracting Substrings
-^^^^^^^^^^^^^^^^^^^^^
+# Extracting Substrings
+# ^^^^^^^^^^^^^^^^^^^^^
 
 
 woodchuck <- c(
@@ -125,8 +125,8 @@ substring(woodchuck, 1:6, 10)
 substr(woodchuck, 1:6, 10)
 
 
-Splitting Strings
-^^^^^^^^^^^^^^^^^
+# Splitting Strings
+# ^^^^^^^^^^^^^^^^^
 
 
 strsplit(woodchuck, " ", fixed = TRUE)
@@ -135,8 +135,8 @@ strsplit(woodchuck, " ", fixed = TRUE)
 strsplit(woodchuck, ",? ")
 
 
-File paths
-^^^^^^^^^^
+# File paths
+# ^^^^^^^^^^
 
 
 getwd()
@@ -162,12 +162,12 @@ basename(file_name)
 dirname(file_name)
 
 
-Factors
-~~~~~~~
+# Factors
+# ~~~~~~~
 
 
-Creating Factors
-^^^^^^^^^^^^^^^^
+# Creating Factors
+# ^^^^^^^^^^^^^^^^
 
 
 (heights <- data.frame(
@@ -202,8 +202,8 @@ gender_char <- c(
 (gender_fac <- factor(gender_char))
 
 
-Changing Factor Levels
-^^^^^^^^^^^^^^^^^^^^^^
+# Changing Factor Levels
+# ^^^^^^^^^^^^^^^^^^^^^^
 
 
 factor(gender_char, levels = c("male", "female"))
@@ -219,8 +219,8 @@ gender_fac
 relevel(gender_fac, "male")
 
 
-Dropping Factor Levels
-^^^^^^^^^^^^^^^^^^^^^^
+# Dropping Factor Levels
+# ^^^^^^^^^^^^^^^^^^^^^^
 
 
 getting_to_work <- data.frame(
@@ -243,8 +243,8 @@ getting_to_work <- droplevels(getting_to_work)
 levels(getting_to_work$mode)
 
 
-Ordered Factors
-^^^^^^^^^^^^^^^
+# Ordered Factors
+# ^^^^^^^^^^^^^^^
 
 
 happy_choices <- c("depressed", "grumpy", "so-so", "cheery", "ecstatic")
@@ -265,8 +265,8 @@ is.factor(happy_ord)
 is.ordered(happy_fac)
 
 
-Converting Continuous Variables to be Categorical
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Converting Continuous Variables to be Categorical
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 ages <- 16 + 50 * rbeta(10000, 2, 3)
@@ -279,8 +279,8 @@ class(ages)
 class(grouped_ages)
 
 
-Converting Categorical Variables to be Continuous
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Converting Categorical Variables to be Continuous
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 dirty <- data.frame(
@@ -303,8 +303,8 @@ factor_to_numeric <- function(f)
 }
 
 
-Generating Factor Levels
-^^^^^^^^^^^^^^^^^^^^^^^^
+# Generating Factor Levels
+# ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 gl(3, 2)
@@ -312,8 +312,8 @@ gl(3, 2, labels = c("placebo", "drug A", "drug B"))
 gl(3, 1, 6, labels = c("placebo", "drug A", "drug B")) #alternating
 
 
-Combining Factors
-^^^^^^^^^^^^^^^^^
+# Combining Factors
+# ^^^^^^^^^^^^^^^^^
 
 
 treatment <- gl(3, 2, labels = c("placebo", "drug A", "drug B"))
@@ -321,16 +321,16 @@ gender <- gl(2, 1, 6, labels = c("female", "male"))
 interaction(treatment, gender)
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 x <- c(

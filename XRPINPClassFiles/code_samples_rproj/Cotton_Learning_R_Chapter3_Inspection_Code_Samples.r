@@ -1,20 +1,20 @@
-Inspecting variables and your workspace
----------------------------------------
+# Inspecting variables and your workspace
+# ---------------------------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Classes
-~~~~~~~
+# Classes
+# ~~~~~~~
 
 
 class(c(TRUE, FALSE))
 
 
-Different Types of Numbers
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Different Types of Numbers
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class(sqrt(1:10))
@@ -25,8 +25,8 @@ class(0.5:4.5)     #the colon operator returns a value that is numeric ...
 class(1:5)         #unless all its values are whole numbers
 
 
-Other Common Classes
-~~~~~~~~~~~~~~~~~~~~           
+# Other Common Classes
+# ~~~~~~~~~~~~~~~~~~~~           
 
 
 class(c("she", "sells", "seashells", "on", "the", "sea", "shore"))
@@ -57,8 +57,8 @@ as.raw(c(pi, 1 + 1i, -1, 256))
 class(sushi)
 
 
-Checking and Changing Classes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Checking and Changing Classes
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 if(!is(x, "some_class"))
@@ -99,8 +99,8 @@ x
 is.numeric(x)
 
 
-Examining Variables
-~~~~~~~~~~~~~~~~~~~
+# Examining Variables
+# ~~~~~~~~~~~~~~~~~~~
 
 
 ulams_spiral <- c(1, 8, 23, 46, 77)  #See http://oeis.org/A033951
@@ -143,8 +143,8 @@ fix(dfr)                #changes stored in dfr
 View(head(dfr, 50))  #view first 50 rows
 
 
-The Workspace
-~~~~~~~~~~~~~
+# The Workspace
+# ~~~~~~~~~~~~~
 
 
 #Create some variables to find
@@ -162,15 +162,15 @@ rm(peach, plum, pear)
 rm(list = ls())  #Remove everything.  Use with caution!
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

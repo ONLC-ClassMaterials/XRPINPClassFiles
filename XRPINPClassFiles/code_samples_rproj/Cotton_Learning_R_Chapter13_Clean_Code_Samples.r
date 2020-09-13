@@ -1,13 +1,13 @@
-Cleaning And Transforming
--------------------------  
+# Cleaning And Transforming
+# -------------------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Cleaning Strings
-~~~~~~~~~~~~~~~~
+# Cleaning Strings
+# ~~~~~~~~~~~~~~~~
 
 
 yn_to_logical <- function(x)
@@ -72,12 +72,12 @@ clean_gender <- str_replace(
 ))
 
 
-Manipulating Data Frames
-~~~~~~~~~~~~~~~~~~~~~~~~
+# Manipulating Data Frames
+# ~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Adding and Replacing Columns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Adding and Replacing Columns
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 english_monarchs$length.of.reign.years <- 
@@ -114,8 +114,8 @@ english_monarchs <- mutate(
 )
 
 
-Dealing With Missing Values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Dealing With Missing Values
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 data("deer_endocranial_volume", package = "learningr")
@@ -129,8 +129,8 @@ na.omit(deer_endocranial_volume)
 na.fail(deer_endocranial_volume)
 
 
-Converting between wide and long form
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Converting between wide and long form
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 deer_wide <- deer_endocranial_volume[, 1:5]
@@ -147,8 +147,8 @@ melt(deer_wide, measure.vars = c("VolCT", "VolBead", "VolLWH", "VolFinarelli"))
 deer_wide_again <- dcast(deer_long, SkullID ~ variable)
 
 
-Using SQL
-^^^^^^^^^
+# Using SQL
+# ^^^^^^^^^
 
 
 install.packages("sqldf")
@@ -172,8 +172,8 @@ query <-
 sqldf(query)
 
 
-Sorting
-~~~~~~~
+# Sorting
+# ~~~~~~~
 
 
 x <- c(2, 32, 4, 16, 8)
@@ -201,8 +201,8 @@ rank(x)
 rank(x, ties.method = "first")
 
 
-Functional Programming
-~~~~~~~~~~~~~~~~~~~~~~
+# Functional Programming
+# ~~~~~~~~~~~~~~~~~~~~~~
 
 
 ct2 <- deer_endocranial_volume$VolCT2  #for convenience of typing
@@ -262,15 +262,15 @@ Reduce(pmax2, measurements_by_deer)
 mean(mean(mean(mean(a, b), c), d), e) != mean(a, b, c, d, e)
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

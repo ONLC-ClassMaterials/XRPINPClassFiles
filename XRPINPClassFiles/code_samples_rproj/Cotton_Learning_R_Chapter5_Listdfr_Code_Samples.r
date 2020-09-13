@@ -1,17 +1,17 @@
-Lists And Data Frames
----------------------
+# Lists And Data Frames
+# ---------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Lists
-~~~~~
+# Lists
+# ~~~~~
 
 
-Creating Lists
-^^^^^^^^^^^^^^
+# Creating Lists
+# ^^^^^^^^^^^^^^
 
 
 (a_list <- list(
@@ -44,8 +44,8 @@ a_list
 ))
 
 
-Atomic and Recursive Variables
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Atomic and Recursive Variables
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 is.atomic(list())
@@ -54,8 +54,8 @@ is.atomic(numeric())
 is.recursive(numeric())
 
 
-List Dimensions and Arithmetic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# List Dimensions and Arithmetic
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 length(a_list)
@@ -76,8 +76,8 @@ l2 <- list(6:10)
 l1[[1]] + l2[[1]]
 
 
-Indexing Lists
-^^^^^^^^^^^^^^
+# Indexing Lists
+# ^^^^^^^^^^^^^^
 
 
 l <- list(
@@ -124,8 +124,8 @@ l$fourth
 l[[4]]       #this throws an error 
 
 
-Converting Between Vectors and Lists
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Converting Between Vectors and Lists
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 busy_beaver <- c(1, 6, 21, 107)  #See http://oeis.org/A060843
@@ -151,8 +151,8 @@ as.numeric(list(1, 6, 21, 107))
 unlist(prime_factors)
 
 
-Combining Lists
-^^^^^^^^^^^^^^^
+# Combining Lists
+# ^^^^^^^^^^^^^^^
 
 
 c(list(a = 1, b = 2), list(3))
@@ -208,8 +208,8 @@ uk_bank_holidays_2013["Aug"] <- list(NULL)
 uk_bank_holidays_2013                    
 
 
-Pairlists
-~~~~~~~~~
+# Pairlists
+# ~~~~~~~~~
 
 
 (arguments_of_sd <- formals(sd))
@@ -220,12 +220,12 @@ pairlist()
 list()
 
 
-Data Frames
-~~~~~~~~~~~
+# Data Frames
+# ~~~~~~~~~~~
 
 
-Creating Data Frames
-^^^^^^^^^^^^^^^^^^^^
+# Creating Data Frames
+# ^^^^^^^^^^^^^^^^^^^^
 
 
 (a_data_frame <- data.frame(
@@ -295,8 +295,8 @@ data.frame(
 )
 
 
-Indexing Data Frames
-^^^^^^^^^^^^^^^^^^^^
+# Indexing Data Frames
+# ^^^^^^^^^^^^^^^^^^^^
 
 
 a_data_frame[2:3, -3]
@@ -316,8 +316,8 @@ a_data_frame[a_data_frame$y > 0 | a_data_frame$z, "x"]
 subset(a_data_frame, y > 0 | z, x)
 
 
-Basic Data Frame Manipulation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Basic Data Frame Manipulation
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 t(a_data_frame)
@@ -340,18 +340,18 @@ colSums(a_data_frame[, 2:3])
 colMeans(a_data_frame[, 2:3])
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 list(alpha = 1, list(beta = 2, gamma = 3, delta = 4), eta = NULL)
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

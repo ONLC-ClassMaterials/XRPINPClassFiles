@@ -1,13 +1,13 @@
-A scientific calculator
------------------------ 
+# A scientific calculator
+# ----------------------- 
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Mathematical Operations and Vectors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Mathematical Operations and Vectors
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 1:5 + 6:10         #look, no loops!
@@ -62,8 +62,8 @@ c("A", "B", "C", "D") < "C"
 c("a", "b", "c", "d") < "C" #your results may vary
 
 
-Assigning Variables
-~~~~~~~~~~~~~~~~~~~
+# Assigning Variables
+# ~~~~~~~~~~~~~~~~~~~
 
 
 x <- 1:5 
@@ -94,8 +94,8 @@ z <- rnorm(5); z
 (zz <- rlnorm(5))
 
 
-Special Numbers
-~~~~~~~~~~~~~~~
+# Special Numbers
+# ~~~~~~~~~~~~~~~
 
 
 c(Inf + 1, Inf - 1, Inf - Inf)
@@ -115,8 +115,8 @@ is.nan(x)
 is.na(x)
 
 
-Logical Vectors
-~~~~~~~~~~~~~~~
+# Logical Vectors
+# ~~~~~~~~~~~~~~~
 
 
 (x <- 1:10 >= 5)
@@ -150,15 +150,15 @@ all(some_true)
 all(all_true)
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

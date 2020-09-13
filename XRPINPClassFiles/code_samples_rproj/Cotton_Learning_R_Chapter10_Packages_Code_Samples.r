@@ -1,13 +1,13 @@
-Packages
---------
+# Packages
+# --------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Loading Packages
-~~~~~~~~~~~~~~~~
+# Loading Packages
+# ~~~~~~~~~~~~~~~~
 
 
 library(lattice)
@@ -35,15 +35,15 @@ if(!require(apackagethatmightnotbeinstalled))
 }
 
 
-The Search Path
-^^^^^^^^^^^^^^^
+# The Search Path
+# ^^^^^^^^^^^^^^^
 
 
 search()
 
 
-Libraries and Installed Packages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Libraries and Installed Packages
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 View(installed.packages())
@@ -60,8 +60,8 @@ Sys.getenv("HOME")
 .libPaths()
 
 
-Installing Packages
-~~~~~~~~~~~~~~~~~~~
+# Installing Packages
+# ~~~~~~~~~~~~~~~~~~~
 
 
 View(available.packages())
@@ -103,8 +103,8 @@ library(devtools)
 install_github("knitr", "yihui")
 
 
-Maintaining Packages
-~~~~~~~~~~~~~~~~~~~~
+# Maintaining Packages
+# ~~~~~~~~~~~~~~~~~~~~
 
 
 update.packages(ask = FALSE)
@@ -113,15 +113,15 @@ update.packages(ask = FALSE)
 remove.packages("zoo")
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

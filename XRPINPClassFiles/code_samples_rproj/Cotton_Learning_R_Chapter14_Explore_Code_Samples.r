@@ -1,13 +1,13 @@
-Exploring And Visualising
--------------------------  
+# Exploring And Visualising
+# -------------------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Summary Statistics
-~~~~~~~~~~~~~~~~~~
+# Summary Statistics
+# ~~~~~~~~~~~~~~~~~~
 
 
 data(obama_vs_mccain, package = "learningr")
@@ -53,16 +53,16 @@ with(obama_vs_mccain, cancor(Obama, McCain))
 with(obama_vs_mccain, cov(Obama, McCain))
 
 
-The Three Plotting Systems
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+# The Three Plotting Systems
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Scatterplots
-~~~~~~~~~~~~~~
+# Scatterplots
+# ~~~~~~~~~~~~~~
 
 
-Take 1: base Graphics
-^^^^^^^^^^^^^^^^^^^^^
+# Take 1: base Graphics
+# ^^^^^^^^^^^^^^^^^^^^^
 
 
 obama_vs_mccain <- obama_vs_mccain[!is.na(obama_vs_mccain$Turnout), ]
@@ -91,8 +91,8 @@ for(region in regions)
 }
 
 
-Take 2: lattice Graphics
-^^^^^^^^^^^^^^^^^^^^^^^^
+# Take 2: lattice Graphics
+# ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 library(lattice)
@@ -137,8 +137,8 @@ xyplot(
 (lat2 <- update(lat1, col = "violet", pch = 20))
 
 
-Take 3: ggplot2 Graphics
-^^^^^^^^^^^^^^^^^^^^^^^^
+# Take 3: ggplot2 Graphics
+# ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 library(ggplot2)
@@ -174,8 +174,8 @@ ggplot(obama_vs_mccain, aes(Income, Turnout)) +
 )
 
 
-Line Plots
-~~~~~~~~~~
+# Line Plots
+# ~~~~~~~~~~
 
 
 with(
@@ -216,8 +216,8 @@ ggplot(crab_tag$daylog, aes(Date, ymin = -Min.Depth, ymax = -Max.Depth)) +
   geom_ribbon(color = "black", fill = "white") 
 
 
-Histograms
-~~~~~~~~~~
+# Histograms
+# ~~~~~~~~~~
 
 
 with(obama_vs_mccain, hist(Obama))
@@ -272,8 +272,8 @@ ggplot(obama_vs_mccain, aes(Obama, ..density..)) +
   geom_histogram(binwidth = 5)
 
 
-Boxplots
-~~~~~~~~
+# Boxplots
+# ~~~~~~~~
 
 
 boxplot(Obama ~ Region, data = obama_vs_mccain)
@@ -293,8 +293,8 @@ ggplot(ovm, aes(Region, Obama)) +
   geom_boxplot()
 
 
-Barcharts
-~~~~~~~~~
+# Barcharts
+# ~~~~~~~~~
 
 
 ovm <- ovm[!(ovm$State %in% c("Alaska", "Hawaii")), ]
@@ -337,23 +337,23 @@ ggplot(religions_long, aes(State, value, fill = variable)) +
   coord_flip()
 
 
-Other Plotting Packages and Systems
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Other Plotting Packages and Systems
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 library(devtools)
 install_github("rCharts", "ramnathv")
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

@@ -1,17 +1,17 @@
-Dates and Times
----------------
+# Dates and Times
+# ---------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Date and Time Classes
-~~~~~~~~~~~~~~~~~~~~~
+# Date and Time Classes
+# ~~~~~~~~~~~~~~~~~~~~~
 
 
-POSIX dates and times
-^^^^^^^^^^^^^^^^^^^^^
+# POSIX dates and times
+# ^^^^^^^^^^^^^^^^^^^^^
 
 
 (now_ct <- Sys.time())
@@ -32,8 +32,8 @@ now_lt$sec
 now_lt[["min"]]
 
 
-The Date Class
-^^^^^^^^^^^^^^
+# The Date Class
+# ^^^^^^^^^^^^^^
 
 
 (now_date <- as.Date(now_ct))
@@ -41,16 +41,16 @@ class(now_date)
 unclass(now_date)
 
 
-Other Date Classes
-^^^^^^^^^^^^^^^^^^
+# Other Date Classes
+# ^^^^^^^^^^^^^^^^^^
 
 
-Conversion To and From Strings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Conversion To and From Strings
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Parsing Dates
-^^^^^^^^^^^^^
+# Parsing Dates
+# ^^^^^^^^^^^^^
 
 
 moon_landings_str <- c(
@@ -75,15 +75,15 @@ strptime(
 )
 
 
-Formatting Dates
-^^^^^^^^^^^^^^^^
+# Formatting Dates
+# ^^^^^^^^^^^^^^^^
 
 
 strftime(now_ct, "It's %I:%M%p on %A %d %B, %Y.")
 
 
-Time Zones
-~~~~~~~~~~
+# Time Zones
+# ~~~~~~~~~~
 
 
 strftime(now_ct, tz = "America/Los_Angeles")
@@ -107,8 +107,8 @@ strftime(now_lt, tz = "Asia/Tokyo")             #no zone change!
 strftime(as.POSIXct(now_lt), tz = "Asia/Tokyo") 
 
 
-Arithmetic With Dates and Times
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Arithmetic With Dates and Times
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 now_ct + 86400 #Tomorrow.  I wonder what the world will be like!
@@ -135,8 +135,8 @@ seq(the_start_of_time, the_end_of_time, by = "1 year")
 seq(the_start_of_time, the_end_of_time, by = "500 days") #of Summer
 
 
-Lubridate
-~~~~~~~~~
+# Lubridate
+# ~~~~~~~~~
 
 
 library(lubridate)
@@ -191,15 +191,15 @@ floor_date(today(), "year")
 ceiling_date(today(), "year")
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

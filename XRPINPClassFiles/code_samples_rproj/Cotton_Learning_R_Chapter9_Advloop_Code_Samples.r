@@ -1,13 +1,13 @@
-Advanced Looping
-----------------
+# Advanced Looping
+# ----------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Replication
-~~~~~~~~~~~
+# Replication
+# ~~~~~~~~~~~
 
 
 rep(runif(1), 5)
@@ -38,8 +38,8 @@ time_for_commute <- function()
 replicate(5, time_for_commute())
 
 
-Looping Over Lists
-~~~~~~~~~~~~~~~~~~
+# Looping Over Lists
+# ~~~~~~~~~~~~~~~~~~
 
 
 prime_factors <- list(
@@ -104,8 +104,8 @@ eapply(env, length)
 lapply(env, length) #same
 
 
-Looping Over Arrays
-~~~~~~~~~~~~~~~~~~~
+# Looping Over Arrays
+# ~~~~~~~~~~~~~~~~~~~
 
 
 install.packages("matlab")
@@ -144,8 +144,8 @@ sapply(baldwins, toString)
 sapply(baldwins, range)
 
 
-Multiple-Input Apply
-~~~~~~~~~~~~~~~~~~~~
+# Multiple-Input Apply
+# ~~~~~~~~~~~~~~~~~~~~
 
 
 msg <- function(name, factors) 
@@ -159,8 +159,8 @@ msg <- function(name, factors)
 mapply(msg, names(prime_factors), prime_factors)
 
 
-Instant Vectorisation
-^^^^^^^^^^^^^^^^^^^^^
+# Instant Vectorisation
+# ^^^^^^^^^^^^^^^^^^^^^
 
 
 baby_gender_report <- function(gender)
@@ -182,8 +182,8 @@ vectorised_baby_gender_report <- Vectorize(baby_gender_report)
 vectorised_baby_gender_report(genders)
 
 
-Split-Apply-Combine
-~~~~~~~~~~~~~~~~~~~
+# Split-Apply-Combine
+# ~~~~~~~~~~~~~~~~~~~
 
 
 (frogger_scores <- data.frame(
@@ -207,8 +207,8 @@ Split-Apply-Combine
 with(frogger_scores, tapply(score, player, mean))
 
 
-The plyr Package
-~~~~~~~~~~~~~~~~
+# The plyr Package
+# ~~~~~~~~~~~~~~~~
 
 
 library(plyr)
@@ -242,16 +242,16 @@ ddply(
 )
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 wayans <- list(
