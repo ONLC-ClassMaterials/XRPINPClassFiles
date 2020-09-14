@@ -38,7 +38,7 @@ exists("pythag", an_environment)
 
 #Convert to list
 (a_list <- as.list(an_environment))
-... and back again.  Both lines of code do the same thing
+#... and back again.  Both lines of code do the same thing
 as.environment(a_list)    
 list2env(a_list)
 
@@ -122,8 +122,8 @@ normalize(c(1, 3, 6, 10, NA))
 normalize(c(1, 3, 6, 10, NA), na.rm = TRUE)
 
 
-Passing Functions To and From Other Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Passing Functions To and From Other Functions
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 do.call(hypotenuse, list(x = 3, y = 4)) #same as hypotenuse(3, 4)
