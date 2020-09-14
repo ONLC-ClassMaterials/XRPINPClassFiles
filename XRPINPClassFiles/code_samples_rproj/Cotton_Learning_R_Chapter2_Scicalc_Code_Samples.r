@@ -19,7 +19,7 @@ median(1:5)
 
 
 sum(1, 2, 3, 4, 5)
-median(1, 2, 3, 4, 5)  #this throws an error
+median(1, 2, 3, 4, 5)  #this throws an error (NOTE: it doesn't anymore...)
 
 
 c(2, 3, 5, 7, 11, 13) - 2            #subtraction                           
