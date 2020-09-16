@@ -1,28 +1,28 @@
-Making Packages
----------------  
+# Making Packages
+# ---------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Why Create Packages?
-~~~~~~~~~~~~~~~~~~~~
+# Why Create Packages?
+# ~~~~~~~~~~~~~~~~~~~~
 
 
-Prerequisites
-~~~~~~~~~~~~~
+# Prerequisites
+# ~~~~~~~~~~~~~
 
 
 install.packages(c("devtools", "roxygen2"))
 
 
-The Package Directory Structure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+# The Package Directory Structure
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
 
 
-Your First Package
-~~~~~~~~~~~~~~~~~~  
+# Your First Package
+# ~~~~~~~~~~~~~~~~~~  
 
 
 hypotenuse <- function(x, y)
@@ -42,8 +42,8 @@ package.skeleton(
 )
 
 
-Documenting packages
-~~~~~~~~~~~~~~~~~~~~
+# Documenting packages
+# ~~~~~~~~~~~~~~~~~~~~
 
 
 #' Help page title
@@ -120,8 +120,8 @@ NULL
 roxygenise("path/to/root/of/package")
 
 
-Checking and Building Packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Checking and Building Packages
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 library(devtools)
@@ -134,8 +134,8 @@ build("path/to/root/of/package")
 release("path/to/root/of/package")
 
 
-Maintaining packages
-~~~~~~~~~~~~~~~~~~~~
+# Maintaining packages
+# ~~~~~~~~~~~~~~~~~~~~
 
 
 hypotenuse <- function(x, y, p = 2)
@@ -178,15 +178,15 @@ hypotenuse <- function(x, y, p = 2)
 hypotenuse(5, 12)   
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

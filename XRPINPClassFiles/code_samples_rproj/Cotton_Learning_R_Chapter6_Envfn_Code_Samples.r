@@ -1,13 +1,13 @@
-Environments and Functions
---------------------------
+# Environments and Functions
+# --------------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Environments
-~~~~~~~~~~~~
+# Environments
+# ~~~~~~~~~~~~
 
 
 an_environment <- new.env()
@@ -38,7 +38,7 @@ exists("pythag", an_environment)
 
 #Convert to list
 (a_list <- as.list(an_environment))
-# ... and back again.  Both lines of code do the same thing
+#... and back again.  Both lines of code do the same thing
 as.environment(a_list)    
 list2env(a_list)
 
@@ -53,12 +53,12 @@ get("non_stormers", envir = globalenv())
 head(ls(envir = baseenv()), 20)
 
 
-Functions
-~~~~~~~~~
+# Functions
+# ~~~~~~~~~
 
 
-Creating and Calling Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Creating and Calling Functions
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 rt
@@ -122,8 +122,8 @@ normalize(c(1, 3, 6, 10, NA))
 normalize(c(1, 3, 6, 10, NA), na.rm = TRUE)
 
 
-Passing Functions To and From Other Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Passing Functions To and From Other Functions
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 do.call(hypotenuse, list(x = 3, y = 4)) #same as hypotenuse(3, 4)
@@ -153,8 +153,8 @@ is.function(emp_cum_dist_fn)
 plot(emp_cum_dist_fn)
 
 
-Variable Scope
-^^^^^^^^^^^^^^
+# Variable Scope
+# ^^^^^^^^^^^^^^
 
 
 f <- function(x)
@@ -204,15 +204,15 @@ h2 <- function(x)
 replicate(10, h2(9))
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

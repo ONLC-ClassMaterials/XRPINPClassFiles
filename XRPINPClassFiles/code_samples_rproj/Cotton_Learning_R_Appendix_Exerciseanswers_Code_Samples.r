@@ -1,5 +1,5 @@
-Solutions to Exercises
-======================
+# Solutions to Exercises
+# ======================
 
 
 sd(0:100)

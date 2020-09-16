@@ -1,17 +1,17 @@
-Flow Control and Loops
-----------------------
+# Flow Control and Loops
+# ----------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Flow Control
-~~~~~~~~~~~~
+# Flow Control
+# ~~~~~~~~~~~~
 
 
-if and else
-^^^^^^^^^^^  
+# if and else
+# ^^^^^^^^^^^  
 
 
 if(TRUE) message("It was true!")
@@ -46,11 +46,11 @@ if(FALSE)
 
 #if(FALSE)
 #{
-#  message("This won't execute...")
+ message("This won't execute...")
 #} 
 #else
 #{                               
-#  message("and you'll get an error before you reach this.")
+ message("and you'll get an error before you reach this.")
 #}
 
 
@@ -78,8 +78,8 @@ x <- sqrt(-1 + 0i)
 (reality <- if(Re(x) == 0) "real" else "imaginary")
 
 
-Vectorised if
-^^^^^^^^^^^^^
+# Vectorised if
+# ^^^^^^^^^^^^^
 
 
 if(c(TRUE, FALSE)) message("two choices")
@@ -96,8 +96,8 @@ yn[c(3, 6, 9, 12)] <- NA
 ifelse(yn, 1:3, -1:-12)
 
 
-Multiple Selection
-^^^^^^^^^^^^^^^^^^
+# Multiple Selection
+# ^^^^^^^^^^^^^^^^^^
 
 
 (greek <- switch(
@@ -153,12 +153,12 @@ switch(
 )
 
 
-Loops
-~~~~~   
+# Loops
+# ~~~~~   
 
 
-repeat Loops
-^^^^^^^^^^^^
+# repeat Loops
+# ^^^^^^^^^^^^
 
 
 repeat
@@ -206,8 +206,8 @@ repeat
 }
 
 
-while Loops
-^^^^^^^^^^^
+# while Loops
+# ^^^^^^^^^^^
 
 
 action <- sample(
@@ -235,8 +235,8 @@ while(action != "Win heart of Andie McDowell")
 }
 
 
-for Loops
-^^^^^^^^^
+# for Loops
+# ^^^^^^^^^
 
 
 for(i in 1:5) message("i = ", i)
@@ -271,16 +271,16 @@ for(i in l)
 }
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 two_d6 <- function(n)

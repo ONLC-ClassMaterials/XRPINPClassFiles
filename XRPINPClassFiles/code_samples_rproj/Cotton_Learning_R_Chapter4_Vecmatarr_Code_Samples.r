@@ -1,13 +1,13 @@
-Vectors, Matrices And Arrays
-----------------------------
+# Vectors, Matrices And Arrays
+# ----------------------------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Vectors
-~~~~~~~
+# Vectors
+# ~~~~~~~
 
 
 8.5:4.5                #sequence of numbers from 8.5 down to 4.5
@@ -27,8 +27,8 @@ logical(5)
 character(5)
 
 
-Sequences
-^^^^^^^^^
+# Sequences
+# ^^^^^^^^^
 
 
 seq.int(3, 12) #same as 3:12       
@@ -47,8 +47,8 @@ pp <- c("Peter", "Piper", "picked", "a", "peck", "of", "pickled", "peppers")
 for(i in seq_along(pp)) print(pp[i])
 
 
-Lengths
-^^^^^^^
+# Lengths
+# ^^^^^^^
 
 
 length(1:5)
@@ -67,8 +67,8 @@ length(poincare) <- 8
 poincare
 
 
-Names
-^^^^^
+# Names
+# ^^^^^
 
 
 c(apple = 1, banana = 2, "kiwi fruit" = 3, 4)
@@ -85,8 +85,8 @@ names(x)
 names(1:4)
 
 
-Indexing Vectors
-^^^^^^^^^^^^^^^^
+# Indexing Vectors
+# ^^^^^^^^^^^^^^^^
 
 
 (x <- (1:5) ^ 2)
@@ -128,8 +128,8 @@ which.min(x)
 which.max(x)
 
 
-Vector Recycling and Repetition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Vector Recycling and Repetition
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 1:5 + 1  
@@ -154,12 +154,12 @@ rep.int(1:5, 3)  #the same as rep(1:5, 3)
 rep_len(1:5, 13)
 
 
-Matrices and Arrays
-~~~~~~~~~~~~~~~~~~~
+# Matrices and Arrays
+# ~~~~~~~~~~~~~~~~~~~
 
 
-Creating Arrays and Matrices
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Creating Arrays and Matrices
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 (three_d_array <- array(
@@ -208,8 +208,8 @@ matrix(
 )
 
 
-Rows, Columns and Dimensions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Rows, Columns and Dimensions
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 dim(three_d_array)
@@ -242,8 +242,8 @@ NCOL(x)
 dim(x)     #There is no DIM(X)
 
 
-Row, Column and Dimension Names
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Row, Column and Dimension Names
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 rownames(a_matrix)
@@ -254,8 +254,8 @@ colnames(three_d_array)
 dimnames(three_d_array)
 
 
-Indexing Arrays
-^^^^^^^^^^^^^^^
+# Indexing Arrays
+# ^^^^^^^^^^^^^^^
 
 
 a_matrix[1, c("zwei", "drei")] #elements in 1st row, 2nd and 3rd columns
@@ -265,8 +265,8 @@ a_matrix[1, ]  #all the first row
 a_matrix[, c("zwei", "drei")]  #all the second and third columns
 
 
-Combining Matrices
-^^^^^^^^^^^^^^^^^^
+# Combining Matrices
+# ^^^^^^^^^^^^^^^^^^
 
 
 (another_matrix <- matrix(
@@ -284,8 +284,8 @@ cbind(a_matrix, another_matrix)
 rbind(a_matrix, another_matrix)
 
 
-Array Arithmetic
-^^^^^^^^^^^^^^^^
+# Array Arithmetic
+# ^^^^^^^^^^^^^^^^
 
 
 a_matrix + another_matrix  
@@ -310,15 +310,15 @@ m ^ -1
 m %*% inverse_of_m         
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

@@ -1,13 +1,13 @@
-Programming
------------
+# Programming
+# -----------
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Messages, Warnings and Errors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Messages, Warnings and Errors
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 f <- function(x)
@@ -79,8 +79,8 @@ h <- function(x, na.rm = FALSE)
 h(c(1, NA))
 
 
-Error Handling
-~~~~~~~~~~~~~~
+# Error Handling
+# ~~~~~~~~~~~~~~
 
 
 to_convert <- list(
@@ -130,8 +130,8 @@ lapply(
 tryapply(to_convert, as.data.frame)
 
 
-Debugging
-~~~~~~~~~
+# Debugging
+# ~~~~~~~~~
 
 
 outer_fn <- function(x) inner_fn(x)
@@ -156,8 +156,8 @@ buggy_count(x)
 undebug(buggy_count)
 
 
-Testing
-^^^^^^^
+# Testing
+# ^^^^^^^
 
 
 hypotenuse <- function(x, y)
@@ -211,11 +211,11 @@ runTestSuite(suite)
 
 
 
-----
+# ----
 
 
-##  Timing stopped at: 0 0 0 done successfully.
-----
+# ##  Timing stopped at: 0 0 0 done successfully.
+# ----
 
 
 test.log.minus1.throws_warning <- function()
@@ -226,8 +226,8 @@ test.log.minus1.throws_warning <- function()
 }
 
 
-testthat
-^^^^^^^^
+# testthat
+# ^^^^^^^^
 
 
 library(testthat)
@@ -248,12 +248,12 @@ test_file(filename)
 expect_warning(log(-1))
 
 
-Magic
-~~~~~
+# Magic
+# ~~~~~
 
 
-Turning strings into code
-^^^^^^^^^^^^^^^^^^^^^^^^^
+# Turning strings into code
+# ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 atan(c(-Inf, -1, 0, 1, Inf))
@@ -283,8 +283,8 @@ class(parsed_r_code)
 eval(parsed_r_code)
 
 
-Turning code into strings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+# Turning code into strings
+# ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 random_numbers <- rt(1000, 2)
@@ -311,12 +311,12 @@ eval(substitute(levels(Gender)), hafu)
 with(hafu, levels(Gender))
 
 
-Object Oriented Programming
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Object Oriented Programming
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-S3 Classes
-^^^^^^^^^^
+# S3 Classes
+# ^^^^^^^^^^
 
 
 print
@@ -333,8 +333,8 @@ head(methods(print))
 methods(mean)
 
 
-Reference Classes
-^^^^^^^^^^^^^^^^^
+# Reference Classes
+# ^^^^^^^^^^^^^^^^^
 
 
 my_class_generator <- setRefClass(
@@ -490,15 +490,15 @@ distanceFromOrigin = function()
 }
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

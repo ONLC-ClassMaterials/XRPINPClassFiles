@@ -1,13 +1,13 @@
-Getting Data
-------------  
+# Getting Data
+# ------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Built-in Datasets
-~~~~~~~~~~~~~~~~~
+# Built-in Datasets
+# ~~~~~~~~~~~~~~~~~
 
 
 data()
@@ -22,12 +22,12 @@ data("kidney", package = "survival")
 head(kidney)
 
 
-Reading Text Files
-~~~~~~~~~~~~~~~~~~
+# Reading Text Files
+# ~~~~~~~~~~~~~~~~~~
 
 
-CSV and Tab Delimited Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# CSV and Tab Delimited Files
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 library(learningr)
@@ -70,8 +70,8 @@ write.csv(
 )
 
 
-Unstructured Text Files
-^^^^^^^^^^^^^^^^^^^^^^^
+# Unstructured Text Files
+# ^^^^^^^^^^^^^^^^^^^^^^^
 
 
 text_file <- system.file(
@@ -89,8 +89,8 @@ writeLines(
 )
 
 
-XML and HTML files
-^^^^^^^^^^^^^^^^^^
+# XML and HTML files
+# ^^^^^^^^^^^^^^^^^^
 
 
 install.packages("XML")
@@ -113,8 +113,8 @@ ops <- as.list(options())
 cat(makexml(ops), file = "options.xml")
 
 
-JSON and YAML Files
-^^^^^^^^^^^^^^^^^^^
+# JSON and YAML Files
+# ^^^^^^^^^^^^^^^^^^^
 
 
 library(RJSONIO)
@@ -133,12 +133,12 @@ library(yaml)
 yaml.load_file(jamaican_city_file)
 
 
-Reading Binary Files
-~~~~~~~~~~~~~~~~~~~~
+# Reading Binary Files
+# ~~~~~~~~~~~~~~~~~~~~
 
 
-Reading Excel Files
-^^^^^^^^^^^^^^^^^^^
+# Reading Excel Files
+# ^^^^^^^^^^^^^^^^^^^
 
 
 library(xlsx)
@@ -161,20 +161,20 @@ bike_data <- read.xlsx2(
 head(bike_data)
 
 
-Reading SAS, Stata, SPSS and MATLAB Files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Reading SAS, Stata, SPSS and MATLAB Files
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Reading Other File Types
-^^^^^^^^^^^^^^^^^^^^^^^^
+# Reading Other File Types
+# ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Web Data
-~~~~~~~~
+# Web Data
+# ~~~~~~~~
 
 
-Sites With an API
-~~~~~~~~~~~~~~~~~
+# Sites With an API
+# ~~~~~~~~~~~~~~~~~
 
 
 install.packages("WDI")
@@ -199,8 +199,8 @@ microsoft <- getSymbols("MSFT")
 head(microsoft)
 
 
-Scraping Web Pages
-~~~~~~~~~~~~~~~~~~
+# Scraping Web Pages
+# ~~~~~~~~~~~~~~~~~~
 
 
 salary_url <- "http://www.justinmrao.com/salary_data.csv"
@@ -232,8 +232,8 @@ time_page <- GET(time_url)
 time_doc <- content(page, useInternalNodes = TRUE)
 
 
-Accessing Databases
-~~~~~~~~~~~~~~~~~~~
+# Accessing Databases
+# ~~~~~~~~~~~~~~~~~~~
 
 
 library(DBI)
@@ -295,15 +295,15 @@ id_block <- sqlQuery(conn, "SELECT * FROM IdBlock")
 odbcClose(conn)
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

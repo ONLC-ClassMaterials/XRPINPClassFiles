@@ -1,17 +1,17 @@
-Distributions And Modelling
----------------------------  
+# Distributions And Modelling
+# ---------------------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-Random Numbers
-~~~~~~~~~~~~~~
+# Random Numbers
+# ~~~~~~~~~~~~~~
 
 
-The sample Function
-^^^^^^^^^^^^^^^^^^^
+# The sample Function
+# ^^^^^^^^^^^^^^^^^^^
 
 
 sample(7)
@@ -33,8 +33,8 @@ weights <- c(1, 1, 2, 3, 5, 8, 13, 21, 8, 3, 1, 1)
 sample(month.abb, 1, prob = weights)
 
 
-Sampling From Distributions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Sampling From Distributions
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 runif(5)         #5 uniform random numbers between 0 and 1
@@ -54,12 +54,12 @@ set.seed(1)
 runif(5)
 
 
-Distributions
-~~~~~~~~~~~~~
+# Distributions
+# ~~~~~~~~~~~~~
 
 
-Formulae
-~~~~~~~~
+# Formulae
+# ~~~~~~~~
 
 
 Rate ~ Year + Age.Group + Ethnicity + Gender
@@ -80,8 +80,8 @@ Rate ~ (Year + Ethnicity + Gender) ^ 2
 Rate ~ I(Year ^ 2)  #year squared, not an interaction
 
 
-A First Model: Linear Regressions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# A First Model: Linear Regressions
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 model1 <- lm(Rate ~ Year + Age.Group + Ethnicity + Gender, gonorrhoea)
@@ -96,8 +96,8 @@ lapply(Filter(is.factor, gonorrhoea), levels)
 summary(model1)
 
 
-Comparing and Updating Models
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Comparing and Updating Models
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 model2 <- update(model1, ~ . - Year)
@@ -132,8 +132,8 @@ model4 <- update(model3, data = g2)
 summary(model4)
 
 
-Plotting and Inspecting Models
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Plotting and Inspecting Models
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 plot_numbers <- 1:6
@@ -181,8 +181,8 @@ subset(
 )
 
 
-Other Model Types
-~~~~~~~~~~~~~~~~~
+# Other Model Types
+# ~~~~~~~~~~~~~~~~~
 
 
 glm(true_or_false ~ some + predictor + variables, data, family = binomial())
@@ -191,15 +191,15 @@ glm(true_or_false ~ some + predictor + variables, data, family = binomial())
 lme(y ~ some + fixed + effects, data, random = ~ 1 | random / effects)
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

@@ -1,56 +1,56 @@
-Introduction
-------------  
+# Introduction
+# ------------  
 
 
-Chapter Goals
-~~~~~~~~~~~~~
+# Chapter Goals
+# ~~~~~~~~~~~~~
 
 
-What Is R?
-~~~~~~~~~~
+# What Is R?
+# ~~~~~~~~~~
 
 
-Installing R
-~~~~~~~~~~~~
+# Installing R
+# ~~~~~~~~~~~~
 
 
-Choosing an IDE
-~~~~~~~~~~~~~~~
+# Choosing an IDE
+# ~~~~~~~~~~~~~~~
 
 
-Emacs + ESS
-^^^^^^^^^^^
+# Emacs + ESS
+# ^^^^^^^^^^^
 
 
-Eclipse/Architect
-^^^^^^^^^^^^^^^^
+# Eclipse/Architect
+# ^^^^^^^^^^^^^^^^
 
 
-RStudio
-^^^^^^^^
+# RStudio
+# ^^^^^^^^
 
 
-Revolution-R
-^^^^^^^^^^^^
+# Revolution-R
+# ^^^^^^^^^^^^
 
 
-Live-R
-^^^^^^
+# Live-R
+# ^^^^^^
 
 
-Other IDEs and Editors
-~~~~~~~~~~~~~~~~~~~~~~
+# Other IDEs and Editors
+# ~~~~~~~~~~~~~~~~~~~~~~
 
 
-Your First Program
-~~~~~~~~~~~~~~~~~~
+# Your First Program
+# ~~~~~~~~~~~~~~~~~~
 
 
 mean(1:5)
 
 
-How to Get Help in R
-~~~~~~~~~~~~~~~~~~~~
+# How to Get Help in R
+# ~~~~~~~~~~~~~~~~~~~~
 
 
 ?mean                  #opens the help page for the mean function
@@ -89,8 +89,8 @@ vignette("Sweave", package = "utils")
 RSiteSearch("{Bayesian regression}")
 
 
-Installing Extra Related Software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Installing Extra Related Software
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 install.packages("installr")   #download and install the package named installr
@@ -100,15 +100,15 @@ install.Rtools()               #Rtools is needed for building your own packages
 install.git()                  #git provides version control for your code
 
 
-Summary
-~~~~~~~
+# Summary
+# ~~~~~~~
 
 
-Test Your Knowledge: Quiz
-~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Quiz
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Test Your Knowledge: Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Test Your Knowledge: Exercises
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
